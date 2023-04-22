@@ -9,6 +9,8 @@ import { Song } from 'src/app/interfaces/song.interface';
 export class SongComponent {
   @Input() song?: Song;
 
+  
+
   __entryTopDate(){
     return new Date(this.song?.entryTopDate);
   }
