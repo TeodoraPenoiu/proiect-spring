@@ -1,3 +1,5 @@
+@import "../../../assets/styles/colors.scss";
+
 .cards {
   display: flex;
   gap: 24px;
@@ -11,7 +13,7 @@ button {
 }
 
 button:nth-child(odd) {
-  background-color: #1DA1F2;
+  background-color: $blue;
   color: white;
   border: none;
   border-radius: 15px;
@@ -25,7 +27,7 @@ button:nth-child(even) {
 }
 
 button:hover {
-  background-color: #0077B5;
+  background-color: $dark-blue;
   color: white;
   border: none;
   border-radius: 15px;

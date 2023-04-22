@@ -1,8 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/colors.scss';
 
 header {
   font-size: 25px;
   font-family: serif;
-  color: #1DA1F2;
+  color: $blue;
   text-align: center;
 }

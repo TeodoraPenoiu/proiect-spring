@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Song } from 'src/app/interfaces/song.interface';
 
 @Component({
   selector: 'app-song-top',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./song-top.component.scss']
 })
 export class SongTopComponent {
-  songs = [{
+  songs:Song[] = [{
     name: 'Flowers',
     artist: 'Miley Cyrus',
     entryTopDate: '2023-03-07T11:13:37.855Z',
@@ -34,7 +35,6 @@ export class SongTopComponent {
     name: 'Own my mind',
     artist: 'Måneskin',
     entryTopDate: '2023-03-19T19:28:46.637Z',
-    votes: 3,
-    id: 5
+    votes: 3
   }];
 }

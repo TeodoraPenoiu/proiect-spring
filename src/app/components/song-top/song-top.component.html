@@ -1,4 +1,3 @@
 <ol>
-    <app-song *ngFor="let song of songs" [entryTopDate]="song.entryTopDate"
-    [name]="song.name" [artist]="song.artist" [votes]="song.votes"></app-song>
+    <app-song *ngFor="let song of songs" [song]="song"></app-song>
 </ol>

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Song } from 'src/app/interfaces/song.interface';
 
 @Component({
   selector: 'app-song',
@@ -6,24 +7,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./song.component.scss']
 })
 export class SongComponent {
-  @Input() entryTopDate?: any;
-  @Input() votes?: number;
+  @Input() song?: Song;
 
-  @Input() name?: string;
-  @Input() artist?: string;
-
-  getVoteCount() {
-    return this.votes;
-  }
-
-  setVoteCount(value: number) {
-    this.votes = value;
-  }
-
-  setEntryTopDate(value: Date) {
-    this.entryTopDate = value;
-  }
   __entryTopDate(){
-    return new Date(this.entryTopDate);
+    return new Date(this.song?.entryTopDate);
   }
 }
