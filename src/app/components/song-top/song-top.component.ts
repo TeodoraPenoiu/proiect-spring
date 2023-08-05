@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { Song } from 'src/app/interfaces/song.interface';
 
 @Component({

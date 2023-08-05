@@ -1,9 +1,9 @@
 <span class="cards" *ngIf="song">
   <li>{{ song.name }}</li>
   <li>{{ song.artist }}</li>
-  <li>{{ song.entryTopDate }}</li>
-  <li>{{ song.votes }}</li>
-  <button name="voteBtn" class="padding-10">vote</button>
+  <li>{{ __entryTopDate() }}</li>
+  <li>{{ getVoteCount() }}</li>
+  <button name="voteBtn" class="padding-10" (click)="Vote(this.song)">vote</button>
   <button name="deleteBtn" class="padding-10">delete</button>
   <button name="editBtn" class="padding-10">edit</button>
 </span>
